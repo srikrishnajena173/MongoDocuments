@@ -1,0 +1,22 @@
+1.Stop Mongo DB using :-
+
+sudo service mongod stop
+
+2.Remove Packages using :-
+
+sudo yum erase $(rpm -qa | grep mongodb-org)
+
+3.Remove Log Directories using :-
+
+sudo rm -r /var/log/mongodb
+
+4.Remove Data Directories using :-
+
+sudo rm -r /var/lib/mongo
+
+5. Remove the mongo config file 
+
+sudo rm -r /etc/mongod.conf
+
+
+
